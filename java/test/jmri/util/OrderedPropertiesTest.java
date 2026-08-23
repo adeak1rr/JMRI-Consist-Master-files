@@ -1,0 +1,30 @@
+package jmri.util;
+
+import org.junit.jupiter.api.*;
+
+/**
+ *
+ * @author Paul Bender Copyright (C) 2017
+ */
+public class OrderedPropertiesTest {
+
+    @Test
+    @SuppressWarnings("deprecation") // class is marked for removal, so this doesn't work
+    public void testCTor() {
+        var t = new OrderedProperties();
+        Assertions.assertNotNull( t, "exists");
+    }
+
+    @BeforeEach
+    public void setUp() {
+        JUnitUtil.setUp();
+    }
+
+    @AfterEach
+    public void tearDown() {
+        JUnitUtil.tearDown();
+    }
+
+    // private static final Logger log = LoggerFactory.getLogger(OrderedPropertiesTest.class);
+
+}

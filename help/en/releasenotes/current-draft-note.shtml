@@ -1,0 +1,703 @@
+
+    <h3>Hardware Support</h3>
+        <ul>
+          <li></li>
+        </ul>
+
+        <h4>Acela CTI</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Anyma DMX512</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Bachrus Speedo</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4><a href="http://bidib.org/index_e.html">BiDiB</a></h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>CBUS</h4>
+            <ul>
+                <li>Updated CBUS op-code definitions with the new VLCB op-codes so they
+                    show up nicely in the CBUS Console.</li>
+            </ul>
+
+        <h4>C/MRI</h4>
+            <ul>
+                <li>Extend the possible reply length to support very large SUSIC installs.</li>
+            </ul>
+
+        <h4>DCC++ and DCC-EX</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>DCC4pc</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Direct</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>ESU</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Hornby</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Internal</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>IPOCSMR</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>JMRI Simple Server/JMRI Client</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>KPF-Zeller</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Lenz XPressNet</h4>
+            <ul>
+                <li>Fixed an issue where a throttle could stop sending speed and
+                    function commands for its locomotive after receiving an
+                    unrecognized locomotive information response, requiring a
+                    JMRI restart to recover.</li>
+            </ul>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li>SlotMonitor update:
+                <ul>
+                    <li>Add ability to hide / move columns. N.B. if you open 2 or more SlotMonitors this is only effective on the first one.</li>
+                    <li>If Extended purge time is enabled in the Command Station the Slow scan for slots is extended.</li>
+                    <li>If purging is disabled in the Command Station so is slow scanning.</li>
+                      A value of -1 stops slowscanning.</li>
+                </ul>
+                <li>Remove some extra messages when configuring with the board-level tools
+                  in the LocoNet menu</li>
+                <li>Added a new programming facade "Digitrax OpSw Word Programming" for
+                  programming at the board level for e.g. DS64's.</li>
+                <li>You can now program, save and load DS64 output addresses and routes in a roster entry using DecoderPro.</li>
+                <li>Add in-use count to the Slot Monitor.</li>
+                <li>Timeouts when programming the Op Switches on Digitrax boards (e.g. DS64, etc) will automatically be retried once.</li>
+                <li>Added interpretation of some BDL716 configuration messages to
+                  LocoNet Monitor.</li>
+                <li>Made some LocoNet-specific programming mode constants public so the can be accessed from scripts.</li>
+                <li>LocoNet Clock now uses the same throttle ID as the rest of JMRI, instead of (illegal) 00 00.</li>
+            </ul>
+
+        <h4>Maple</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Marklin CS2</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>MERG</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>MQTT</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>MRC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>NCE</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Oak Tree</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Powerline</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>RFID</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Raspberry PI</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Roco z21/Z21</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Secsi</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>SPROG</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>SRCP</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>TAMS</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>TMCC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Uhlenbrock Intellibox</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Zimo</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>ZTC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+        <ul>
+          <li></li>
+        </ul>
+
+        <h4>AE Model</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Arnold</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Bachmann</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>BLI</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>BNM Hobbies</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>CT Elektronik</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>DCC Concepts</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Digikeijs (Digirails)</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Digitrax</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Doehler &amp; Haas</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>ESU</h4>
+            <ul>
+                <li>Updated LokPiot 5 / LokSound 5 definitions for new output modes as of firmware version 5.14.183.</li>
+            </ul>
+
+        <h4>Hattoms</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Hornby</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Kuehn</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>LaisDCC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4><a href="http://www.ldhtrenes.com.ar">LDH</a></h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Lenz</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>MD Electronics</h4>
+             <ul>
+                <li></li>
+             </ul>
+
+        <h4>MGP</h4>
+             <ul>
+                <li></li>
+             </ul>
+
+        <h4>Mistral Train Models</h4>
+             <ul>
+                <li></li>
+             </ul>
+
+        <h4>MTH</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>MRC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>NCE</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Norsk Modelljernbane (NJM)</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Piko decoders</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Public Domain and DIY decoders</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>QSI</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Rampino Elektronic</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Rautenhaus</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>RR-CirKits</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li>Add Kato OEM decoder</li>
+            </ul>
+
+        <h4>Tam Valley Depot</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>TAMS</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>TCS</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Team Digital</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Technologistic (train-O-matic)</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Trix Modelleisenbahn</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Uhlenbrock</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Umelec</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Viessmann</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Wangrow</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>ZIMO</h4>
+            <ul>
+                <li>Added replacement-feature for v4.x MS/MN decoder</li>
+                <li>Added some features from CV27 for FS/MS/MN decoders, in particular HLU-Options</li>
+                <li>Minor optical corrections</li>
+            </ul>
+
+        <h4>Miscellaneous</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+    <h3>Control Panel Editor</h3>
+        <a id="CPE" name="CPE"></a>
+        <ul>
+            <li></li>
+        </ul>
+        <h4>Circuit Builder</h4>
+            <a id="CPE-CB" name="CPE-CB"></a>
+            <ul>
+                <li></li>
+            </ul>
+        <h4>Palette</h4>
+            <a id="CPE-P" name="CPE-P"></a>
+            <ul>
+                <li></li>
+            </ul>
+
+    <h3>CTC Tool</h3>
+        <a id="PE-CTC" name="PE-CTC"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li></li>
+        </ul>
+
+    <h3>Dispatcher System</h3>
+        <a id="Dispatcher_System" name="Dispatcher_System"></a>
+        <ul>
+             <li></li>
+        </ul>
+
+   <h3>Internationalization</h3>
+        <a id="I18N" name="I18N"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+            <li>Reduced CPU use when the layout is redrawn, for instance on every block
+                occupancy change: a redraw now repaints the drawing area only, instead of
+                the whole window including its menu bar, tool bar and scroll bars, and a
+                partial repaint no longer redraws the whole visible track plan.</li>
+            <li>Fixed an occasional Concurrent Modification Exception error in the
+                LayoutBlock class during startup.</li>
+            <li>An unexpected error while restoring the saved block values no longer leaves
+                Layout Block routing uninitialized, and is now reported in the log instead
+                of passing unnoticed.</li>
+            <li></li>
+        </ul>
+
+        <h4>NX - Entry/Exit Tool</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+    <h3>LccPro</h3>
+        <a id="LccPro" name="LccPro"></a>
+        <ul>
+          <li></li>
+        </ul>
+
+    <h3>Logix</h3>
+        <a id="Logix" name="Logix"></a>
+        <ul>
+          <li></li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li></li>
+        </ul>
+
+    <h3>Meters and MeterFrames</h3>
+        <a id="Meters" name="Meters"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>OperationsPro</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+   <h3>Panel Editor</h3>
+        <a id="PE" name="PE"></a>
+        <ul>
+            <li>Sensor and MultiSensor icons now repaint only their own area of the panel
+                when their sensor changes state, instead of the whole window, reducing CPU
+                use on panels receiving frequent sensor events. The repainted area follows
+                the panel zoom level.</li>
+            <li>Fixed a NullPointerException in a Memory icon displaying a roster entry,
+                which could be thrown when the memory value changed while the icon was
+                being updated. The exception propagated out to the caller, so a script or
+                automaton writing to that memory could be stopped by it.</li>
+            <li></li>
+        </ul>
+
+    <h3>Permissions</h3>
+        <a id="Permissions" name="Permissions"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Preferences</h3>
+        <a id="Preferences" name="Preferences"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Resources</h3>
+        <a id="Resources" name="Resources"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Roster</h3>
+        <a id="Roster" name="Roster"></a>
+        <ul>
+            <li>Importing a roster backup file (Import Complete Roster)
+                has been made faster and more reliable.</li>
+        </ul>
+
+    <h3>Routes</h3>
+        <a id="Routes" name="Routes"></a>
+       <ul>
+            <li></li>
+       </ul>
+
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+        <ul>
+            <li></li>
+        </ul>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Signal Heads</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Signal Masts</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Signal Groups</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Cab Signals</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Simple Signal Logic</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>USS CTC Logic</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+   <h3>Switchboard Editor</h3>
+        <a id="SW" name="SW"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Throttle</h3>
+        <a id="throttle" name="throttle"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Timetable</h3>
+        <a id="Timetable" name="Timetable"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+   <h3>Tracker</h3>
+        <a id="Tr" name="Tr"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Turnouts, Lights, Sensors and other elements</h3>
+        <a id="TLae" name="TLae"></a>
+        <ul>
+            <li>Fixed high CPU use of the Turnout Table when the "graphic state" preference
+                is enabled: painting a state icon no longer resizes the row, which kept the
+                table repainting itself continuously once all turnouts were in a known state.
+                Rows are now also tall enough for the icons while turnouts are still in the
+                Unknown state.</li>
+            <li></li>
+        </ul>
+
+   <h3>Warrants</h3>
+        <a id="Wt" name="Wt"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+   <h3>Web Access</h3>
+        <a id="WA" name="WA"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+   <h3>Web Server</h3>
+        <a id="server" name="server"></a>
+        <ul>
+            <li>Improve how "show ? if unknown" works with background image.</li>
+        </ul>
+
+    <h3>Where Used</h3>
+        <a id="WhereUsed" name="WhereUsed"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+   <h3>WiThrottle Server</h3>
+        <a id="WS" name="WS"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+   <h3>Virtual Sound Decoder</h3>
+        <a id="VSD" name="VSD"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+   <h3>Z21 Server</h3>
+        <a id="Z21" name="Z21"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Fix the <strong>Current Config file</strong> path in <strong>Help &rArr; File Locations</strong>.</li>
+        </ul>

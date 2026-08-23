@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?transform-xslt href="http://jmri.org/xml/decoders/esu/v5fnOutputs.xsl"?>
+<!-- Copyright (C) JMRI 2019 All rights reserved -->
+<!--                                                                        -->
+<!-- JMRI is free software; you can redistribute it and/or modify it under  -->
+<!-- the terms of version 2 of the GNU General Public License as published  -->
+<!-- by the Free Software Foundation. See the "COPYING" file for a copy     -->
+<!-- of this license.                                                       -->
+<!--                                                                        -->
+<!-- JMRI is distributed in the hope that it will be useful, but WITHOUT    -->
+<!-- ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or  -->
+<!-- FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License  -->
+<!-- for more details.                                                      -->
+<decoder-config xmlns:xi="http://www.w3.org/2001/XInclude"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="http://jmri.org/xml/schema/decoder-4-15-2.xsd" allowResetDefaults="no">
+    <!-- ver1 made from the ESU_LokSoundV5 file -->
+    <!-- ver2 updates for new firmware and reorganise code shared with LokPilot 5  -->
+    <!-- ver3 disable Reset to Defaults -->
+    <!-- ver4 add a new productID -->
+    <!-- ver5 move function output CVs to xsl -->
+    <version author="Dave Heap" version="1" lastUpdated="20190507"/>
+    <version author="Dave Heap" version="2" lastUpdated="20200410"/>
+    <version author="Dave Heap" version="3" lastUpdated="20210125"/>
+    <version author="Dave Heap" version="4" lastUpdated="20211206"/>
+    <version author="Heiko Rosemann" version="5" lastUpdated="20260806"/>
+    <decoder>
+        <family name="ESU Miscellaneous decoders" mfg="Electronic Solutions Ulm GmbH" lowVersionID="255" highVersionID="255">
+            <model model="Essential Sound Unit" numOuts="4" productID="16777363,16777419">
+                <output name="1" label="Front|Light">
+                    <label xml:lang="fr">Feux|avant</label>
+                    <label xml:lang="it">Luci|Frontali</label>
+                    <label xml:lang="de">Licht|vor</label>
+                </output>
+                <output name="2" label="Rear|Light">
+                    <label xml:lang="fr">Feux|arrière</label>
+                    <label xml:lang="it">Luci|Posteriori</label>
+                    <label xml:lang="de">Licht|rück</label>
+                </output>
+                <output name="3" label="Aux|1">
+                    <label xml:lang="fr">Aux|1</label>
+                    <label xml:lang="it">Ausil|1</label>
+                    <label xml:lang="de">Aux|1</label>
+                </output>
+                <output name="4" label="Aux|2">
+                    <label xml:lang="fr">Aux|2</label>
+                    <label xml:lang="it">Ausil|2</label>
+                    <label xml:lang="de">Aux|2</label>
+                </output>
+                <output name="5" label="Shift|mode">
+                    <label xml:lang="fr">Changement|mode</label>
+                    <label xml:lang="it">Modo|Modifica</label>
+                    <label xml:lang="de">Shift|modus</label>
+                </output>
+                <output name="6" label="Dynamic|brake">
+                    <label xml:lang="fr">Frein|dynamique</label>
+                    <label xml:lang="it">Freni|Dinamici</label>
+                    <label xml:lang="de">Dynam.|Bremse</label>
+                </output>
+                <output name="7" label="Drive|hold">
+                </output>
+                <output name="8" label="Grade|crossing">
+                </output>
+                <output name="9" label="Sound|slot 1">
+                    <label xml:lang="fr">Créneau|Son 1</label>
+                    <label xml:lang="it">Slot| Suono 1</label>
+                    <label xml:lang="de">Sound|slot 1</label>
+                </output>
+                <output name="10" label="Sound|slot 2">
+                    <label xml:lang="fr">Créneau|Son 2</label>
+                    <label xml:lang="it">Slot| Suono 2</label>
+                    <label xml:lang="de">Sound|slot 2</label>
+                </output>
+                <output name="11" label="Sound|slot 3">
+                    <label xml:lang="fr">Créneau|Son 3</label>
+                    <label xml:lang="it">Slot| Suono 3</label>
+                    <label xml:lang="de">Sound|slot 3</label>
+                </output>
+                <output name="12" label="Sound|slot 4">
+                    <label xml:lang="fr">Créneau|Son 4</label>
+                    <label xml:lang="it">Slot| Suono 4</label>
+                    <label xml:lang="de">Sound|slot 4</label>
+                </output>
+                <output name="13" label="Sound|slot 5">
+                    <label xml:lang="fr">Créneau|Son 5</label>
+                    <label xml:lang="it">Slot| Suono 5</label>
+                    <label xml:lang="de">Sound|slot 5</label>
+                </output>
+                <output name="14" label="Sound|slot 6">
+                    <label xml:lang="fr">Créneau|Son 6</label>
+                    <label xml:lang="it">Slot| Suono 6</label>
+                    <label xml:lang="de">Sound|slot 6</label>
+                </output>
+                <output name="15" label="Sound|slot 7">
+                    <label xml:lang="fr">Créneau|Son 7</label>
+                    <label xml:lang="it">Slot| Suono 7</label>
+                    <label xml:lang="de">Sound|slot 7</label>
+                </output>
+                <output name="16" label="Sound|slot 8">
+                    <label xml:lang="fr">Créneau|Son 8</label>
+                    <label xml:lang="it">Slot| Suono 8</label>
+                    <label xml:lang="de">Sound|slot 8</label>
+                </output>
+                <size length="30.5" width="15.5" height="5.5" units="mm"/>
+            </model>
+            <functionlabels>
+                <functionlabel num="0" lockable="true">
+                    <text>Light</text>
+                    <text xml:lang="de">Licht</text>
+                </functionlabel>
+                <functionlabel num="1" lockable="true">
+                    <text>Bell</text>
+                    <text xml:lang="de">Sound</text>
+                </functionlabel>
+                <functionlabel num="2" lockable="false">
+                    <text>Horn</text>
+                    <text xml:lang="de">Pfeife / Signalhorn</text>
+                </functionlabel>
+            </functionlabels>
+        </family>
+        <programming direct="yes" paged="yes" register="yes" ops="yes">
+            <capability>
+                <name>High Access via Double Index</name>
+                <parameter name="Max Regular CV address">256</parameter>
+                <parameter name="High Address CV">96</parameter>
+                <parameter name="Low Address CV">97</parameter>
+                <parameter name="Access Register CV">99</parameter>
+                <parameter name="Modulo">100</parameter>
+            </capability>
+            <capability>
+                <name>Indexed CV access</name>
+                <parameter name="PI">31</parameter>
+                <parameter name="SI">32</parameter>
+                <parameter name="cvFirst">false</parameter>
+                <parameter name="skipDupIndexWrite">true</parameter>
+            </capability>
+        </programming>
+        <variables>
+            <xi:include href="http://jmri.org/xml/decoders/esu/v5standardCVs.xml"/>
+            <xi:include href="http://jmri.org/xml/decoders/esu/EssenFnMapCVs.xml"/>
+        </variables>
+        <resets>
+            <factReset label="Reset All CVs." CV="8" default="8"/>
+        </resets>
+    </decoder>
+    <!--   <xi:include href="http://jmri.org/xml/decoders/esu/v4testPane.xml"/> -->
+    <xi:include href="http://jmri.org/xml/decoders/esu/v4basicSpeedControlPane.xml"/>
+    <xi:include href="http://jmri.org/xml/decoders/esu/v4speedTablePane.xml"/>
+    <xi:include href="http://jmri.org/xml/decoders/esu/v5ConsistPane.xml"/>
+    <xi:include href="http://jmri.org/xml/decoders/esu/v4advancedPane.xml"/>
+    <xi:include href="http://jmri.org/xml/decoders/esu/v4lightsPane.xml"/>
+    <xi:include href="http://jmri.org/xml/decoders/esu/v4soundPane.xml"/>
+    <xi:include href="http://jmri.org/xml/decoders/esu/v4soundLevelsPane.xml"/>
+    <xi:include href="http://jmri.org/xml/decoders/esu/v5randFuncPane.xml"/>
+    <xi:include href="http://jmri.org/xml/decoders/esu/v4fnSetPane.xml"/>
+    <xi:include href="http://jmri.org/xml/decoders/esu/v4infoPane.xml"/>
+    <!-- the following is the decoder function output definition
+         Needs to stay in this file for xsl transform to work and create all the CVs
+         Abusing pane element to store data for xsl transform -->
+    
+    <pane include="never">
+        <name>__DecoderFnDefs</name>
+        <column>
+            <!-- list function outputs for each supported decoder here in the labels -->
+            
+            <!-- Available output features are:
+                 
+                 "noSP": Output does not have the option called "Servo Power"
+                 "sO": Output options called "Servo output",
+                 "Servo output Steam engine Johnson Bar Control" and "Servo output Pantograph bouncing"
+                 "eS": Output option called "External controlled smoke unit"
+                 "sC": Output option called "Sound controlled smoke unit"
+                 "pa": Output option called "Pantograph"
+                 "rC": Output option called "Roco coupler"
+                 "eC": Output option called "ESU coupler"
+
+                 All other output options are the most common among all LokPilot 5 and LokSound 5 decoders.
+                 
+                 Determined from decoder manuals and LokProgrammer 5.2.18 -->
+
+            <display item="Essential Sound Unit">
+                <label>sC,noSP</label>
+                <label>sC,noSP</label>
+                <label>sC,noSP</label>
+                <label>sC,noSP</label>
+                <label>sC,eS,rC,noSP</label>
+                <label>sC,eS,rC,noSP</label>
+                <label>sC,rC,noSP</label>
+                <label>sC,rC,noSP</label>
+            </display>
+            
+        </column>
+    </pane>
+
+    <!-- the following is the decoder function labels and names
+         Needs to stay in this file for xsl transform to work and create all the CVs
+         Abusing pane element to store data for xsl transform -->
+    
+    <pane include="never">
+        <name>__functionCommonDefs</name>
+        <column>
+            <!-- Add translations as new display item outputNames:lang -->
+            <!-- i.e. display item="outputNames:de" -->
+            <display item="outputNames">
+                <label>Headlight [1]</label>
+                <label>Headlight [2]</label>
+                <label>Rearlight [1]</label>
+                <label>Rearlight [2]</label>
+                <label>AUX1 [1]</label>
+                <label>AUX1 [2]</label>
+                <label>AUX2 [1]</label>
+                <label>AUX2 [2]</label>
+                <label>AUX3</label>
+                <label>AUX4</label>
+                <label>AUX5</label>
+                <label>AUX6</label>
+                <label>AUX7</label>
+                <label>AUX8</label>
+                <label>AUX9</label>
+                <label>AUX10</label>
+                <label>AUX11</label>
+                <label>AUX12</label>
+                <label>AUX13</label>
+                <label>AUX14</label>
+                <label>AUX15</label>
+                <label>AUX16</label>
+                <label>AUX17</label>
+                <label>AUX18</label>
+            </display>
+            <display item="outputLabel">
+                <label>HL-1</label>
+                <label>HL-2</label>
+                <label>RL-1</label>
+                <label>RL-2</label>
+                <label>A1-1</label>
+                <label>A1-2</label>
+                <label>A2-1</label>
+                <label>A2-2</label>
+                <label>A3</label>
+                <label>A4</label>
+                <label>A5</label>
+                <label>A6</label>
+                <label>A7</label>
+                <label>A8</label>
+                <label>A9</label>
+                <label>A10</label>
+                <label>A11</label>
+                <label>A12</label>
+                <label>A13</label>
+                <label>A14</label>
+                <label>A15</label>
+                <label>A16</label>
+                <label>A17</label>
+                <label>A18</label>
+            </display>
+            <display item="baseCV">
+                <label>259</label>
+                <label>419</label>
+                <label>267</label>
+                <label>427</label>
+                <label>275</label>
+                <label>435</label>
+                <label>283</label>
+                <label>443</label>
+                <label>291</label>
+                <label>299</label>
+                <label>307</label>
+                <label>315</label>
+                <label>323</label>
+                <label>331</label>
+                <label>339</label>
+                <label>347</label>
+                <label>355</label>
+                <label>363</label>
+                <label>371</label>
+                <label>379</label>
+                <label>387</label>
+                <label>395</label>
+                <label>403</label>
+                <label>411</label>
+            </display>
+        </column>
+    </pane>
+
+</decoder-config>
