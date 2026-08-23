@@ -79,4 +79,12 @@ RemoteSystemsTempFiles
 # OS junk files
 [Tt]humbs.db
 *.DS_Store
-/lib/
+
+# lib/ (vendored dependency jars) is excluded, EXCEPT openlcb.jar --
+# pom.xml declares it with <scope>system</scope> pointing directly at
+# this exact path ("not yet available on a maven repository"), so
+# without it every Maven build (even a bare `mvn compile`) fails
+# immediately at dependency resolution, before running any goal --
+# unlike other lib/ jars, there's no lazy-load workaround possible.
+/lib/*
+!/lib/openlcb.jar
